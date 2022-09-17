@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NILAI UJIAN</title>
+</head>
+<body>
+    <script>
+        var tidak_remed = "lulus";
+        var remed = "tidak_lulus";
+        var mtk = 80 ;
+        var bahasa_indonesia = 88 ;
+        var bahasa_inggris = 96 ;
+        var ipa = 88 ;
+        var kkm = 75 ;
+        var rata_rata = mtk + bahasa_indonesia + bahasa_inggris + ipa / 4
+        document.write(rata_rata);
+        document.write("<br />");
+        if (rata_rata > kkm){
+            document.write(tidak_remed)
+        }else{document.write(remed)}
+    </script>
+</body>
+</html>
