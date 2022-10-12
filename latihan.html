@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var celcius = 32;
+        var fahrenheit = 9/5 * celcius + 32;
+        document.write(`hasil dari ${celcius} celcius = ${fahrenheit} fahrenheit <br>`)
+        
+        var fahrenheit = 89.6;
+        var celcius = 5/9 * ( fahrenheit - 32 );
+        document.write(` hasil dari ${fahrenheit} fahrenheit = ${celcius} celcius <br>`)
+
+        var jam = 1
+        var menit = 25
+        var detik = 10
+        var hasil = (jam * 3600 ) + (menit * 60) + detik
+        document.write(`hasil dari ${jam} jam ${menit} menit ${detik} detik = ${hasil} detik <br> `)
+        
+        var tahun = 2002 
+        var hasil = tahun % 4
+        if (hasil == 0 ) {
+            document.write(`tahun ${tahun} adalah tahun kabisat`)
+        } else{
+            document.write(`tahun ${tahun} adalah bukan tahun kabisat`)
+        }
+    </script>
+</body>
+</html>
