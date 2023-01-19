@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+var anjing = {
+        nama : "zio",
+        warna : "putih",
+        jenis : "husky",
+        makanan : "pedigree",
+        anak : 3,
+
+        dipanggil : function (){
+            return "menyahut";
+        },
+
+        high_five : function (){
+            return "menurut";
+        }
+    }
+
+    document.write(`dia namanya : ${anjing.nama}<br/>`);
+    document.write(`dia berwarna : ${anjing.warna}<br/>`);
+    document.write(`berjenis : ${anjing.jenis}<br/>`);
+    document.write(`biasanya anjingku makan : ${anjing.makanan} itu merknya <br/>`);
+    document.write(`dan dia mempunyai : ${anjing.anak} ekor anak <br/>`);
+    document.write(`saat dipanggil dia selalu : ${anjing.dipanggil()}<br/>`);
+    document.write(`dan saat high five dia selalu : ${anjing.high_five()}<br/>`);
+
+    </script>
+</body>
+</html>
