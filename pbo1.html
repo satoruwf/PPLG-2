@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // MENGGUNAKAN CONSTRUCTOR
+
+        // class kucing{
+        //     constructor(nama, umur){
+        //         this.nama = nama,
+        //         this.umur = umur
+        //     }
+        // }
+
+        // var kucing1 = new kucing("zee", 3);
+        // document.write("kucing ku namanya : " + kucing1.nama + "<br/>");
+        // document.write("kucing berumur : " + kucing1.umur + "<br/>");
+
+        // MENGGUNAKAN FUNCTION
+
+        // let kucing = [
+        //     {
+        //         nama : "zee",
+        //         jumlah_kaki : 4,
+        //         menyapa : function(){
+        //         return "haloo, namaku "+kucing.nama+" , meooww";
+        //         }    
+        //     },
+
+        //     {
+        //         nama : "rays",
+        //         jumlah_kaki : 4,
+        //         menyapa : function(){
+        //         return "haloo, namaku "+kucing.nama+" , meooww";
+        //         }   
+        //     }
+        // ] 
+            
+        
+        // console.log(kucing[1].menyapa())
+
+        // itu error 
+
+        let kucing = [
+            {
+                nama : "zee",
+                jumlah_kaki : 4,
+                menyapa : function(){
+                return "haloo, namaku "+this.nama+" , meooww";
+                }    
+            },
+
+            {
+                nama : "rays",
+                jumlah_kaki : 4,
+                menyapa : function(){
+                return "haloo, namaku "+this.nama+" , meooww";
+                }   
+            }
+        ] 
+            
+        
+        document.write(kucing[1].menyapa())
+
+
+    </script>
+</body>
+</html>
