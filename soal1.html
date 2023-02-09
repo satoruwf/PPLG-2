@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // persegi
+
+       class bangun_datar {
+                luas(){}
+                keliling(){}
+            }
+            class persegi extends bangun_datar{
+                
+                luas(){
+                    return this.sisi * this.sisi;
+                }
+                keliling(){
+                    return this.sisi + this.sisi + this.sisi + this.sisi;
+                }
+            }
+            var persegi1 = new persegi();
+            persegi1.sisi = 5;
+            persegi1.keliling = 10;
+
+            document.write(`LUAS PERSEGI : ${persegi1.sisi}<br/>`)
+            document.write(`LUAS KELILING : ${persegi1.keliling}<br/>`)
+          
+        // segitiga
+
+        //     class bangun_datar {
+        //         luas(){}
+        //         keliling(){}
+        //     }
+        //     class segitiga extends bangun_datar{
+        //         sisi = 5;
+        //         luas(){
+        //             return this.alas * this.tinggi / 2
+        //         }
+        //         keliling(){
+        //             return this.sisi + this.sisi + this.sisi
+        //         }
+        //     }
+        //     var segitiga1 = new segitiga();
+        //     segitiga1.alas = 5;
+        //     segitiga1.tinggi = 10;
+
+        //     document.write(`${segitiga1.luas()}<br/>`)
+        //     document.write(`${segitiga1.keliling()}<br/>`)
+
+        // // //lingkaran
+
+        
+
+        // class bangun_datar {
+        //         luas(){}
+        //         keliling(){}
+        //     }
+        //     class lingkaran extends bangun_datar{
+        //         luas(){
+        //             return this.phi * this.r * this.r
+        //         }
+        //         keliling(){
+        //             return 2 * this.phi * this.r
+        //         }
+        //     }
+        //     var lingkaran1 = new lingkaran();
+        //    lingkaran1.phi = 3.14;
+        //    lingkaran1.r = 15;
+
+        //     document.write(`${lingkaran1.luas()}<br/>`)
+        //     document.write(`${lingkaran1.keliling()}<br/>`)
+
+
+
+
+    </script>
+</body>
+</html>
