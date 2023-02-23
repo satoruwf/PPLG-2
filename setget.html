@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> <h4> STUDENTS OF HOGWARTS </h4>
+    <script>
+
+        // class ongkir{
+        //     #pajak = 0.2;
+
+        //     set pajak(nilai_pajak){
+        //         this.#pajak = nilai_pajak      //read only
+        //     }
+
+        //     get pajak(){
+        //         return this.#pajak;
+        //     }
+        // }
+
+        // var ongkir1 = new ongkir();
+        // ongkir1.pajak = 1;
+        // document.write(ongkir1.pajak);
+
+        class user{
+            #username ;
+            #email ;
+            #password ;
+            #umur ;
+
+            set username(user_name){
+                this.#username = user_name;
+            }
+
+            set email(user_email){
+                this.#email = user_email;
+            }
+
+            set password(user_password){
+                this.#password = user_password;
+            }
+
+            set umur(user_umur){
+                this.#umur = user_umur;
+            }
+
+
+
+            get username(){
+                return this.#username ;
+            }
+
+            get email(){
+                return this.#email ;
+            }
+
+            get password(){
+                return this.#password ;
+            }
+
+            get umur(){
+                return this.#umur ;
+            }
+        }
+
+        var user1 = new user();
+        user1.username = "Cedric Diggory";
+        user1.email = "hufflepuffyced@gmail.com";
+        user1.password = "******";
+        user1.umur = 17;
+        document.write(`User 1 =  ${user1.username}<br/>`);
+        document.write(`Email =  ${user1.email}<br/>`);
+        document.write(`Password =  ${user1.password}<br/>`);
+        document.write(`Umur = ${user1.umur} Tahun <br/><hr/>`);
+
+        var user2 = new user();
+        user2.username = "Harry Potter";
+        user2.email = "gryffindoriespotter@gmail.com";
+        user2.password = "******";
+        user2.umur = 14;
+        document.write(`User 2 =  ${user2.username}<br/>`);
+        document.write(`Email =  ${user2.email}<br/>`);
+        document.write(`Password =  ${user2.password}<br/>`);
+        document.write(`Umur = ${user2.umur} Tahun <br/><hr/>`);
+
+
+
+        
+    </script>
+</body>
+</html>
