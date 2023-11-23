@@ -7,6 +7,10 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <style>
+
+    *{
+        font-family: arial;
+    }
     body{
         background: #eee5e9;
     }
@@ -16,6 +20,8 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         align-items: center;
+       
+
     }
 
     .grid > article{
@@ -25,19 +31,86 @@
         border-radius: 20px;
         text-align: center;
         width: 250px;
+        border: 1px solid black;
         transition: transform .3s;
+    }
+
+    article.grid1{
+        border: none;
+        background-color: rgb(233, 52, 82);
+
     }
 
     .grid > article:hover{
         transform: translateY(5px);
         box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
     }
+
+    .grid > article img{
+        width: 100px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .text{
+        padding: 0 20px 20px;
+    }
+
+    .text h2{
+        text-transform: uppercase;
+        font-family: arial;
+    }
+
+    /* .text button{ */
+        /* color: white; */
+/*          */
+    /* } */
+    button{
+        border-radius: 20px;
+        border: none;
+        background-color: black;
+        color:white;
+        padding: 10px;
+        font-weight: 600;
+        width:100%;
+        text-transform: capitalize;
+        cursor: pointer;
+
+    }
+
+    button.b1{
+        border-radius: 20px;
+        border: none;
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        font-weight: 600;
+        width:100%;
+        text-transform: capitalize;
+        cursor: pointer;
+        color: rgb(233, 52, 82);
+    }
+
+    @media (max-width: 768px){
+        .grid{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 500px){
+     .grid{
+         grid-template-columns: repeat(2, 1fr);
+     }
+
+     .grid > article{
+        text-align: center;
+     }
+ }
 </style>
 <body>
     <div class="container">
         <main class="grid">
             <article>
-                <img src="" alt="">
+                <img src="twitter.png" alt="Logo Twitter">
                 <div class="text">
                     <h2>TWITTER</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores rerum cumque repudiandae culpa, molestiae minima voluptatibus dicta obcaecati amet odio! Nulla, accusantium. Minima excepturi dolore corporis suscipit quisquam ut dolorem?</p>
@@ -45,17 +118,17 @@
                 </div>
             </article>
 
-            <article>
-                <img src="" alt="">
+            <article class="grid1">
+                <img src="instagram.svg" alt="" width="125px">
                 <div class="text">
                     <h2>INSTAGRAM</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores rerum cumque repudiandae culpa, molestiae minima voluptatibus dicta obcaecati amet odio! Nulla, accusantium. Minima excepturi dolore corporis suscipit quisquam ut dolorem?</p>
-                    <button> Read More </button>
+                    <button class="b1"> Read More </button>
                 </div>
             </article>
 
             <article>
-                <img src="" alt="">
+                <img src="youtube.png" alt="">
                 <div class="text">
                     <h2>YOUTUBE</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores rerum cumque repudiandae culpa, molestiae minima voluptatibus dicta obcaecati amet odio! Nulla, accusantium. Minima excepturi dolore corporis suscipit quisquam ut dolorem?</p>
